@@ -15,18 +15,18 @@ public class DieselCar extends Car{
 
     public void calculateGroenEjerAfgift(){
         if (kmPrL < 5){
-            grønEjerAfgift = 15260;
+            groenEjerAfgift = 15260;
         } else if (kmPrL < 10){
-            grønEjerAfgift = 2770;
+            groenEjerAfgift = 2770;
         } else if (kmPrL < 15){
-            grønEjerAfgift = 1850;
+            groenEjerAfgift = 1850;
         } else if (kmPrL < 20){
-            grønEjerAfgift = 1390;
+            groenEjerAfgift = 1390;
         } else if (kmPrL < 50){
-            grønEjerAfgift = 130;
+            groenEjerAfgift = 130;
         }
 
-        if (!harParticleFilter) grønEjerAfgift += 1000;
+        if (!harParticleFilter) groenEjerAfgift += 1000;
     }
 
     @Override
