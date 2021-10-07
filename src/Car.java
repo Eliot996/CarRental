@@ -5,7 +5,7 @@ public abstract class  Car {
     protected String model;
     protected int year;
     protected int doorCount;
-    protected int grønEjerAfgift;
+    protected int groenEjerAfgift;
 
     public Car(String regNr, String make, String model, int year, int doorCount) {
         this.regNr = regNr;
@@ -15,22 +15,22 @@ public abstract class  Car {
         this.doorCount = doorCount;
     }
 
-    public void calculateGroenEjerAfgift(double factor){
+    protected void calculateGroenEjerAfgift(double factor){
         if (factor < 5){
-            grønEjerAfgift = 10470;
+            groenEjerAfgift = 10470;
         } else if (factor < 10){
-            grønEjerAfgift = 5500;
+            groenEjerAfgift = 5500;
         } else if (factor < 15){
-            grønEjerAfgift = 2340;
+            groenEjerAfgift = 2340;
         } else if (factor < 20){
-            grønEjerAfgift = 1050;
+            groenEjerAfgift = 1050;
         } else if (factor < 50){
-            grønEjerAfgift = 330;
+            groenEjerAfgift = 330;
         }
     }
 
-    public int getGrønEjerAfgift() {
-        return grønEjerAfgift;
+    public int getGroenEjerAfgift() {
+        return groenEjerAfgift;
     }
 
     @Override
@@ -41,7 +41,7 @@ public abstract class  Car {
                 ", model='" + model + '\'' +
                 ", year=" + year +
                 ", doorCount=" + doorCount +
-                ", grønejerafgift=" + grønEjerAfgift +
+                ", grønejerafgift=" + groenEjerAfgift +
                 '}';
     }
 }

@@ -14,6 +14,10 @@ public class GasolineCar extends Car{
         calculateGroenEjerAfgift(kmPrL);
     }
 
+    public void calculateGroenEjerAfgift(){
+        calculateGroenEjerAfgift(kmPrL);
+    }
+
     @Override
     public String toString() {
         return "GasolineCar{" +

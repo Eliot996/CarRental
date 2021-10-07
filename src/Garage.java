@@ -14,15 +14,17 @@ public class Garage {
 
     public int calculateTotalGroenEjerAfgift(){
         int total = 0;
-        for (Car car : cars) total += car.getGrønEjerAfgift();
+        for (Car car : cars) total += car.getGroenEjerAfgift();
         return total;
     }
 
     @Override
     public String toString() {
         StringBuilder returnString = new StringBuilder("These cars are in the car: \n");
+        int i = 0;
         for (Car car : cars) {
-            returnString.append(car.toString()).append('\n');
+            returnString.append(i).append(". ").append(car.toString()).append('\n');
+            i++;
         }
         return returnString.toString();
     }
